@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <!--Хедер-->
     <header class="header">
-      <a href="#" class="header-logo">Web<span class="header-logo-span">Studio</span></a>
-      <nav class="header-nav">
+       <div class="header-container">
+        <a href="#" class="header-logo">Web<span class="header-logo-span">Studio</span></a>
+           <nav class="header-nav">
         <ul class="header-list list">
           <li><a href="#" class="header-item current">Студія</a></li>
           <li><a href="portfolio.html" class="header-item">Портфоліо</a></li>
@@ -25,13 +27,18 @@
         <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+      <!-- Банер -->
+      <section class="hero container">
+        <h1 class="hero-title">Ефективні рішення для<br> вашого бізнесу</h1>
         <button type="button" class="hero-btn">Замовити послугу</button>
       </section>
+
+      <!-- Переваги -->
       <section>
+        <div class="benefits-container container">
         <h2 class="visually-hidden">Переваги компанії</h2>
         <ul class="benefits list">
           <li>
@@ -51,8 +58,12 @@
             <p class="benefits-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="work">
+
+      <!-- Роботи -->
+      <section class="work container">
+        <div class="work-container">
         <h2 class="work-title">Чим ми займаємося</h2>
         <ul class="work-list list">
           <li class="work-item">
@@ -65,8 +76,12 @@
             <img src="images/design.jpg" alt="Дизайнерські рішення" width="370" />
           </li>
         </ul>
+        </div>
       </section>
+
+      <!-- Команда -->
       <section class="section-team">
+        <div class="team-container container">
         <h2 class="section-team-title">Наша команда</h2>
         <ul class="team-list list">
           <li class="team-item">
@@ -90,9 +105,13 @@
             <p class="team-text">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
+
+    <!-- Футер -->
     <footer class="footer">
+      <div class="footer-container">
       <a href="#" class="footer-logo">Web<span class="footer-logo-span">Studio</span></a>
       <address>
         <ul class="footer-list list">
@@ -113,6 +132,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
