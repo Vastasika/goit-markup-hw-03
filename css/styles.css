@@ -348,6 +348,8 @@ background-color: var(--accent-color);
 
 /* Футер */
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--primary-background-color);
 }
 
@@ -364,6 +366,10 @@ background-color: var(--accent-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-logo-span{
