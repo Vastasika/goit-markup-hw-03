@@ -31,6 +31,7 @@ ul {
 
 img{
     display: block;
+    max-width: 100%;
 }
 
 ul{
@@ -49,9 +50,8 @@ body{
     color: var(--primary-text-color) ;
 }
 
-.container{
+section{
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .header-container,
@@ -87,18 +87,12 @@ body{
 .header-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .header-list,
 .contacts-nav{
     display: flex;
 }
-
-.header-list{
-    margin-right: 344px;
-}
-
 
 .header-logo{
     margin-right: 93px;
@@ -137,6 +131,11 @@ margin-right: 50px;
     color: var(--primary-text-color);
 }
 
+.contacts-nav{
+    margin-left: auto;
+    padding: 32px 0;
+}
+
 .contacts-nav :not(:last-child) {
     margin-right: 50px;
 }
@@ -154,14 +153,17 @@ color: var(--accent-color);
 }
 
 /* Банер */
-.hero{
-    padding: 200px 452px;
-        background-color: var(--primary-background-color);
+.hero{ 
         text-align: center;
+        padding: 200px 0;
+        background-color: var(--primary-background-color);
+       
 }
 
 .hero-title{
-    margin-bottom: 30px;
+        text-align: center;
+        margin:0 auto;
+        max-width: 696px;
 
         font-weight: 900;
         font-size: 44px;
@@ -172,6 +174,7 @@ color: var(--accent-color);
 }
 
 .hero-btn{
+        margin-top: 30px;
         border-radius: 4px;
         padding: 10px 32px;
 
@@ -199,6 +202,10 @@ color: var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+.benefits-item{
+    max-width: 270px;
 }
 
 .benefits-item:not(:last-child){
@@ -242,17 +249,25 @@ margin-right: 30px;
 
 /* Команда */
 .section-team{
+    padding-bottom: 94px;
     background-color:var(--secondary-background-color) ;
 }
 
 .team-item{
     text-align: center;
+    max-width: 270px;
+
 
     background-color:var(--primary-color-white);
 }
 
 .team-item:not(:last-child){
     margin-right: 30px;
+}
+
+.team-item-container{
+    padding: 30px 70px;
+    white-space: nowrap;
 }
 
 .section-team-title{
@@ -270,8 +285,7 @@ margin-right: 30px;
 }
 
 .team-title{
-         margin-top: 30px;
-         margin-bottom: 10px;
+        margin-bottom: 10px;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
@@ -279,8 +293,6 @@ margin-right: 30px;
 }
 
 .team-text{
-        margin-bottom: 30px;
-
         font-size: 16px;
         line-height: 1.19;
         color: var(--secondary-text-color);
@@ -291,10 +303,11 @@ margin-right: 30px;
     display: flex;
     justify-content: center;
     margin-bottom: 34px;
+    gap: 8px;
    }
 
+   
 .filter-btn{
-    margin-right: 8px;
     border-radius: 4px;
     padding: 6px 25px;
 
@@ -316,6 +329,8 @@ background-color: var(--accent-color);
 }
 
 .portfolio-title{
+        margin-bottom: 4px;
+
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
@@ -326,17 +341,16 @@ background-color: var(--accent-color);
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * 30px);
-    margin-left: calc(-1 * 30px);
+    gap: 30px;
 }
 
 .portfolio-item{
     flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+
 }
 .portfolio-content{
     padding: 20px 24px;
+    white-space: nowrap;
     border: 1px solid var(--border-portfolio);
 }
 
@@ -353,9 +367,6 @@ background-color: var(--accent-color);
     background-color: var(--primary-background-color);
 }
 
-.footer-container{
-    padding: 60px 0px;
-}
 
 .footer-logo{
     display: block;
