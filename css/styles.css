@@ -136,19 +136,19 @@ margin-right: 50px;
    
 }
 
-.link{
-     display: inline-block;
-     padding: 32px 0;
+.link,
+.link-tel{
+     display: block;
+     padding: 32px 0; 
+
+     font-weight: 500;
+     line-height:1.14;
+     letter-spacing: 0.02em;
+     color: var(--secondary-text-color);
 }
 
-.contacts-nav :not(:last-child) {
-    margin-right: 50px;
-}
-.contacts-nav a{
-    font-weight: 500;
-    line-height:1.14;
-    letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
+.link-tel {
+    margin-left: 50px;
 }
 
 .contacts-nav .link:hover,
@@ -361,6 +361,7 @@ background-color: var(--accent-color);
 .portfolio-content{
     padding: 20px 24px;
     border: 1px solid var(--border-portfolio);
+    border-top: none;
 }
 
 .portfolio-text{
